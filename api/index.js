@@ -15,7 +15,6 @@ mongoose.connect(url, { useNewUrlParser: true , useUnifiedTopology: true }).then
 
 module.exports = (req, res) => {
   res.json({
-    body: req.body,
     uid: uuid(),
     query: req.query,
     cookies: req.cookies
